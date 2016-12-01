@@ -6,14 +6,13 @@
   padding: 0px;
   width: auto;
 }
-.navbar-sticky {
-  &.affix {
-    top: 0px; // set to however many pixels you want it to stop from the top of the page... see js notes
+
+  .affix {
+    top: 0px; // set to however many pixels you want it to stop from the top of the page..
     width: 100%;
   }
-  &.affix + * {
-    margin-top: 72px; 
-  }
+  .affix + .container-fluid {
+    padding-top: 72px;   
 }
 
 /* 
