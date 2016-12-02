@@ -30,18 +30,7 @@ h6 {
     font-weight: 400;
 }
 
-.intro-header {
-    padding-top: 0px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    text-align: center;
-    color: #f8f8f8;        
-}
-img.img-responsive { display: table-cell; max-width: 100%; }
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
+img.img-responsive { display: table-cell; max-width: 100%; background-repeat: no-repeat;background-size: cover}
 
 @media(max-width:767px) {
     .intro-message {
@@ -136,4 +125,10 @@ img.img-responsive { display: table-cell; max-width: 100%; }
 footer {
     padding: 15px 0;
     background-color: #f8f8f8;
+}
+footer {
+    position: fixed;
+    height:60px;
+    bottom: 0;
+    width: 100%;
 }

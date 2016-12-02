@@ -14,19 +14,17 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Noto+Serif:400,700"> 
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Noto+Serif:400,700">
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-   
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,161 +37,158 @@
 
 <body>
 
-    <!-- Navigation -->   
+    <!-- Navigation -->
 
 
-<div class="container-fluid padding">
-  <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="197">
-    <div class="container-fluid">
-      <div class="navbar-header navbar-left">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+    <div class="container-fluid padding">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header navbar-left">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">
-            <img src="img\beandone-logo-01.jpg" alt="BeAndOne">
-        </a>
-      </div>
-      <div id="navbar2" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">          
-          <li><a class="btn btn-launch login" href="javascript:;" data-toggle="modal" data-target="#loginModal">KAYDOL</a></li>          
-          <li><a class="btn btn-launch signp" href="javascript:;" data-toggle="modal" data-target="#loginModal">GIRIS YAP</a></li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
+                    <a class="navbar-brand" href="#">
+                        <img src="img\beandone-logo-01.jpg" alt="BeAndOne">
+                    </a>
+                </div>
+                <div id="navbar2" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="btn btn-launch login" href="javascript:;" data-toggle="modal" data-target="#loginModal">KAYDOL</a></li>
+                        <li><a class="btn btn-launch signp" href="javascript:;" data-toggle="modal" data-target="#loginModal">GIRIS YAP</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
     </div>
-    <!--/.container-fluid -->
-  </nav>
-</div>
 
 
     <!-- Header -->
     <a name="about"></a>
-   
-                    <div>     
-                    <img class="img-responsive" src="img/beandone_landing_background.jpg" alt="" />   
-                    
-        </div>
-        <!-- /.container -->
+
+    <img class="img-responsive" src="img/beandone_landing_background.jpg" alt="" />
+
+    <!-- /.container -->
 
     </div>
-    <!-- /.intro-header -->
 
     <!-- Page Content -->
-	
+
     <!-- -Login Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content login-modal">
-            <div class="modal-header login-modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title text-center" id="loginModalLabel">Connect</h4>
-            </div>
-            <div class="modal-body">
-                <div class="text-center">
-                    <div role="tabpanel" class="login-tab">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a id="signin-taba" href="#home" aria-controls="home" role="tab" data-toggle="tab">Sign In</a></li>
-                            <li role="presentation"><a id="signup-taba" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Sign Up</a></li>                           
-                        </ul>
-                    
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active text-center" id="home">
-                                &nbsp;&nbsp;
-                                <span id="login_fail" class="response_error" style="display: none;">Login failed, please try again.</span>
-                                <div class="clearfix"></div>
-                                <form>
-                                    <div class="form-group">
-                                        <div>
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                                            <input type="text" class="form-control" id="login_username" placeholder="Username">
-                                        </div>
-                                        <span class="help-block has-error" id="email-error"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><i class="fa fa-lock"></i></div>
-                                            <input type="password" class="form-control" id="password" placeholder="Password">
-                                        </div>
-                                        <span class="help-block has-error" id="password-error"></span>
-                                    </div>
-                                    </div>
-                                    
-                                    <button type="button" id="login_btn" class="btn btn-block bt-login" data-loading-text="Signing In....">Login</button>                                    
-                                    <div class="modal-social-icons" >
-                            <a href='#' class="btn btn-default facebook"> <i class="fa fa-facebook modal-icons"></i> Sign In with Facebook </a>
-                            <a href='#' class="btn btn-default google"> <i class="fa fa-google-plus modal-icons"></i> Sign In with Google </a>
-                            <a href='#' class="btn btn-default twitter"> <i class="fa fa-twitter modal-icons"></i> Sign In with Twitter </a>
-                            <a href='#' class="btn btn-default linkedin"> <i class="fa fa-linkedin modal-icons"></i> Sign In with Linkedin </a>                            
-                        </div> 
-                                    <div class="clearfix"></div>
-                                    <div class="login-modal-footer">
-                                        <div class="row">
-                                            <div class="col-xs-8 col-sm-8 col-md-8">
-                                                <i class="fa fa-lock"></i>
-                                                <a href="javascript:;" class="forgetpass-tab"> Forgot password? </a>
-                                            
-                                            </div>
-                                            
-                                            <div class="col-xs-4 col-sm-4 col-md-4">
-                                                <i class="fa fa-check"></i>
-                                                <a href="javascript:;" class="signup-tab"> Sign Up </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="profile">
-                                &nbsp;&nbsp;
-                                <span id="registration_fail" class="response_error" style="display: none;">Registration failed, please try again.</span>
-                                <div class="clearfix"></div>
-                                <form>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                                            <input type="text" class="form-control" id="username" placeholder="Username">
-                                        </div>
-                                        <span class="help-block has-error" data-error='0' id="username-error"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><i class="fa fa-at"></i></div>
-                                            <input type="text" class="form-control" id="remail" placeholder="Email">
-                                        </div>
-                                        <span class="help-block has-error" data-error='0' id="remail-error"></span>
-                                    </div>
-                                    <button type="button" id="register_btn" class="btn btn-block bt-login" data-loading-text="Registering....">Register</button>
-                                    <div class="clearfix"></div>
-                                    <div class="login-modal-footer">
-                                        <div class="row">
-                                            <div class="col-xs-4 col-sm-4 col-md-4">
-                                                <i class="fa fa-check"></i>
-                                                <a href="javascript:;" class="signin-tab"> Sign In </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>                            
-                        </div>
-                        
-                    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content login-modal">
+                <div class="modal-header login-modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="loginModalLabel">Connect</h4>
                 </div>
-                
+                <div class="modal-body">
+                    <div class="text-center">
+                        <div role="tabpanel" class="login-tab">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a id="signin-taba" href="#home" aria-controls="home" role="tab" data-toggle="tab">Sign In</a></li>
+                                <li role="presentation"><a id="signup-taba" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Sign Up</a></li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active text-center" id="home">
+                                    &nbsp;&nbsp;
+                                    <span id="login_fail" class="response_error" style="display: none;">Login failed, please try again.</span>
+                                    <div class="clearfix"></div>
+                                    <form>
+                                        <div class="form-group">
+                                            <div>
+                                                <div class="input-group">
+                                                    <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                                    <input type="text" class="form-control" id="login_username" placeholder="Username">
+                                                </div>
+                                                <span class="help-block has-error" id="email-error"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                                </div>
+                                                <span class="help-block has-error" id="password-error"></span>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" id="login_btn" class="btn btn-block bt-login" data-loading-text="Signing In....">Login</button>
+                                        <div class="modal-social-icons">
+                                            <a href='#' class="btn btn-default facebook"> <i class="fa fa-facebook modal-icons"></i> Sign In with Facebook </a>
+                                            <a href='#' class="btn btn-default google"> <i class="fa fa-google-plus modal-icons"></i> Sign In with Google </a>
+                                            <a href='#' class="btn btn-default twitter"> <i class="fa fa-twitter modal-icons"></i> Sign In with Twitter </a>
+                                            <a href='#' class="btn btn-default linkedin"> <i class="fa fa-linkedin modal-icons"></i> Sign In with Linkedin </a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="login-modal-footer">
+                                            <div class="row">
+                                                <div class="col-xs-8 col-sm-8 col-md-8">
+                                                    <i class="fa fa-lock"></i>
+                                                    <a href="javascript:;" class="forgetpass-tab"> Forgot password? </a>
+
+                                                </div>
+
+                                                <div class="col-xs-4 col-sm-4 col-md-4">
+                                                    <i class="fa fa-check"></i>
+                                                    <a href="javascript:;" class="signup-tab"> Sign Up </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="profile">
+                                    &nbsp;&nbsp;
+                                    <span id="registration_fail" class="response_error" style="display: none;">Registration failed, please try again.</span>
+                                    <div class="clearfix"></div>
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                                <input type="text" class="form-control" id="username" placeholder="Username">
+                                            </div>
+                                            <span class="help-block has-error" data-error='0' id="username-error"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-addon"><i class="fa fa-at"></i></div>
+                                                <input type="text" class="form-control" id="remail" placeholder="Email">
+                                            </div>
+                                            <span class="help-block has-error" data-error='0' id="remail-error"></span>
+                                        </div>
+                                        <button type="button" id="register_btn" class="btn btn-block bt-login" data-loading-text="Registering....">Register</button>
+                                        <div class="clearfix"></div>
+                                        <div class="login-modal-footer">
+                                            <div class="row">
+                                                <div class="col-xs-4 col-sm-4 col-md-4">
+                                                    <i class="fa fa-check"></i>
+                                                    <a href="javascript:;" class="signin-tab"> Sign In </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
-       </div>
-    </div>
+        </div>
     </div>
     <!-- - Login Model Ends Here -->
-    
+
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
+    <footer class="navbar-fixed-bottom">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="list-inline">
@@ -203,7 +198,7 @@
                         <li>
                             <a href="#">English</a>
                         </li>
-                    </ul>                    
+                    </ul>
                 </div>
             </div>
         </div>
@@ -214,25 +209,21 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/stickynavbar.js"></script>
-     <script>
-$(document).ready(function(){
-    $(document).on('click','.signup-tab',function(e){
-        e.preventDefault();
-        $('#signup-taba').tab('show');
-    }); 
-    
-    $(document).on('click','.signin-tab',function(e){
-        e.preventDefault();
-        $('#signin-taba').tab('show');
-    });
-            
-    $(document).on('click','.forgetpass-tab',function(e){
-        e.preventDefault();
-        $('#forgetpass-taba').tab('show');
-    });
-}); 
-</script>
+
+    <script>
+        $(document).ready(function() {
+            $(document).on('click', '.signup-tab', function(e) {
+                e.preventDefault();
+                $('#signup-taba').tab('show');
+            });
+
+            $(document).on('click', '.signin-tab', function(e) {
+                e.preventDefault();
+                $('#signin-taba').tab('show');
+            });
+
+        });
+    </script>
 
 </body>
 
