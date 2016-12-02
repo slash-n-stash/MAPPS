@@ -23,8 +23,9 @@ body {
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
-body > .container {
-    padding: 15px 15px 15px 15px;
+body > .container-fluid  {
+    padding: 0px 0px 0px 0px;
+    margin-top:5px; 
 }
 .container .text-muted {
   margin: 20px 0;

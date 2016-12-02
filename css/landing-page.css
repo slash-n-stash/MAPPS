@@ -34,10 +34,9 @@ h6 {
     padding-top: 0px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    color: #f8f8f8;
-    background: url(../img/beandone_landing_background.jpg) no-repeat center center fixed;
-    background-size: cover;
+    color: #f8f8f8;        
 }
+img.img-responsive { display: table-cell; max-width: 100%; }
 .intro-message {
     position: relative;
     padding-top: 20%;
@@ -47,7 +46,8 @@ h6 {
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
-    }
+    }    
+
 
     .intro-message > h1 {
         font-size: 3em;
@@ -95,8 +95,19 @@ h6 {
     width: 200px;
     border-top: 3px solid #e7e7e7;
 }
-
-
+.login {
+    background-color: orange;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    
+}
+.signp{
+    background-color: #00adbc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         float: left;
